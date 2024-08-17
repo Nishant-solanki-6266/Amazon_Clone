@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    font-size: Arial;
+  border: border-box;
+}
+.navbar{
+    height: 60px;
+    background-color:#0f1111;
+    color: white;
+    display: flex;
+    align-items: center;  /*alighn item center kiya o mt dekh jo tera navbar hai pura div vo dekh jisme alighn item center krte to main axes se top se bottom ki or hota hai center*/              
+    justify-content: space-evenly;  /* ye hmne jb search box bna liya tha tb diya tha isse jese jese hm right me kuch exatra cheeze add krege vese ye left me push hota jayega left me push hota jayega*/
+}
+.nav-logo{
+    height: 50px;
+    width: 130px;
+}
+.logo{
+    background-size: cover;
+    background-image: url('amazon_logo.png');
+    height: 50px;
+    width: 100%;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/* box2 style*/
+.add-first{
+    color: #cccccc;
+    font-size: 0.8rem;
+    margin-left:15px;
+}
+.add-second{  /* rem me isliye ki responsive ke time jb hmara width km ho to font bhi km ho vrna font jyada reh jayege*/
+    font-size: 1rem;
+    margin-left:3px;
+
+}
+.add-icons{ /* ydi ak hi div ke andr hmare element hai to unhe same line me lane ke liye hum (display flex ka use krte hai)*/
+display: flex;
+align-items: center;
+}
+/* search wala box3*/
+.nav-search{
+display: flex;
+justify-content: space-evenly; /* justify content se apne div ki width ke hisab se aage or piche ki space chord kr evenly ho gye*/
+background-color: pink;
+width: 620px;/* nav search ki width derkhi hai ab use flex ka dwara shi se  use kiya jayega*/
+height: 40px;
+border-radius:4px;
+}
+.nav-search:hover{
+    border: 0.3px solid orange;
+}
+.Search-select{
+    background-color: #f3f3f3;
+    width: 40px;
+    border: none;  /* select ks by defaoult border hota hai to vo hata diya hmne*/
+    text-align: center;
+     border-top-left-radius: 4px;
+     border-bottom-left-radius: 4px;
+
+}
+.Search-input{
+    width: 100%; /* hmne px me nhi diya % me de diya isse ye hoga ki ye apne parent ki space le lega*/
+    font-size:1rem;
+    border: none; /* ye dene se by defalt search ka jo border tha vo none kr diya hmne*/
+}
+
+.search-icon{
+    width:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;/*magnifier mtlb serach icon ka font bd jata hai isse*/
+    background-color: #febd68;
+    border-top-right-radius:4px;
+    border-bottom-right-radius:4px;
+    color: #0f1111;/* ye hmare serach icons ka color de diya hmne*/
+}
+
+/* ye hmara sighnin wala jo box hai uske style add krege*/
+span{  /* yeha hmne direct span tag ko target kiya hai*/
+    font-size:0.7rem;
+}
+.nav-second{/* ye sighn wala account ki class hai*/
+ font-size: 0.85rem;
+ font-weight:700;/* isse ye acha lighter ho jayega or main bt ki ise hum px me nhi de skte hai*/
+
+}
+
+/* ye hmara return wala box aa gya hai jo navsecodnd me bhi kam ho jayega*/
+
+/* ye hmara Cart wala box ke liye Css likhege */
+
+.nav-cart i{
+font-size:30px;
+}
+.nav-cart{/* yha only cart ka hi font change hoga kitni bdi bt hai ki nav cart me icons bhi but uska change nhi hua font size only cart ka hua but selector use kiya to kr skte hai*/
+    font-size:0.85rem;/* */
+    font-weight:700;
+}
+
+/* yha navbar ka kam the (end) ab hum bnayege (panel)*/
+.panel{
+    height:40px;
+    background-color: #222F3D;
+    display: flex;
+    color: white;
+    align-items: center;/* to top se bottom ho gya center alighn items se main div ke axes se*/
+    justify-content: space-evenly;/* isse jese jese right me kuch widht ya kuch add krege vo left shift hota jayega*/
+
+}
+.pannel-options p{ /* to hum display-flex ka use div ko single line ke liye kr skte hai but paragraph tag ke liye hme (display-iniline) ka use krna pdega ak line me aa jayega*/
+    display: inline;
+    margin-left:10px ;
+}
+.pannel-options{
+    width: 70%; /*mtlb jo hmare pannel ki width hai uska 70% ye option le lega or 30% uske khud ke pas rkhga*/  
+    font-size:0.85rem; ;
+}
+.penel-deals{
+    font-size:0.9rem;
+    font-weight:700;
+}
+/* hero section ka kam kr rhe hai hum ab*/
+
+.hero-section{
+    background-image: url(hero-image.jpg);
+    height: 350px;
+    background-size:cover; /* isse hum photo ko 600px me fit bitha skte hai*/  
+    display: flex;
+    justify-content: center;  /* ye horzontal kam krta hai */
+    align-items: flex-end; /* top se bottom kam krta hai*/
+}
+.hero-msg{
+    background-color:white ;
+    color: #0f1111;
+    height: 40px;
+    display: flex;
+    align-items: center; /*verticle yani upr niche*/
+    justify-content: center;
+    font-size:1rem;
+     width: 80%;
+     margin-bottom:25px;
+}
+.hero-msg a{
+    color: #007185;
+}
+/* isme hum ...shop section ka css add kr rhe hai*/
+
+.box{
+   /* border: 2px solid black;  */
+   height: 400px;
+   width: 22%; /* 25% me hi (isliye diya kyuki hmari width by default 100% phle thi to hmen 25 diya to uske hisab se divide ho jayege to hmare box25 25 ho gey)*/
+   background-color: white;/* ye hmare bckground color box ka hai kyuki  parent ka bhi aa rhi tha background color*/
+   padding:20px 0px 15px;
+   margin-top: 15px;
+}
+.shop-section{
+    display: flex;  /* ydi hme same line me dikhana hoto uske parent ko kr do display flex*/
+    flex-wrap: wrap; /* isse hmare content ko hmne copy paste kiya tha jisse ak hi me display flex ke karn ho gye the (islie wrap kr liya)*/
+    justify-content: space-evenly; /*jb hme sbme evenly same space chaiye to flex-evenly jyada space lege to width ko km kr bhai*/
+    background-color: #e2e7e6;/* sbi me ho jayega isliye hme alg diya box me*/
+}
+.box-image{
+    height:300px;
+    background-size:cover;/* cover se pure boxes me photo aati hai*/
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   }
+.box-content{
+margin-left: 1rem;  /* 1 rem =60px*/
+margin-right: 1rem;
+}
+.box-content p{
+color:#007185;
+}
+
+
+/*Footer ke liye design*/
+footer{
+    margin-top: 15px;
+}
+.foot-panel1{ 
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    
+
+}
+
+/* footer panel 222 wala style krege ab hum */
+.foot-panel2{
+    background-color:#222F3D ;
+    color: white;
+    height: 300px;
+    display:flex ;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;
+    font-size: 0.85rem;
+    margin-top:10px ;
+    color: #dddddd;
+    text-decoration: none;
+}
+
+/*Foot panel 3 create krege*/
+
+.foot-panel3{
+    background-color: #222F3D;
+    color:wheat ;
+    border-top: 0.5px solid white;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    background-size: cover;
+    background-image: url('amazon_logo.png');
+    height: 50px;
+    width: 130px;
+}
+/*foot-penel4 ki desighn krege hum ab*/
+
+.foot-panel4{
+    background-color: #0f1111;
+    color: wheat;
+    height: 80px;
+    font-size: 1rem;
+    text-align: center;
+}
+.pages{
+    padding-top: 25px;
+}
+.pages a{
+    color: wheat;
+    text-decoration: none;
+}
+.copyright{
+    padding-top: 3px;
+    
+}
